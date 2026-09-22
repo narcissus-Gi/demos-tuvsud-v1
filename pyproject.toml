@@ -1,0 +1,29 @@
+[project]
+name = "demos-tuvsud-v1"
+version = "0.1.0"
+description = "Five-day LangGraph agent course demos"
+readme = "README.md"
+requires-python = ">=3.12.14,<3.13"
+
+dependencies = [
+    # LangGraph 核心
+    "langgraph>=1,<2",
+    "langchain-core>=1,<2",
+
+    # 配置、数据模型与结构化校验
+    "pydantic>=2,<3",
+    "pydantic-settings>=2,<3",
+    "python-dotenv>=1,<2",
+
+    # HTTP 模型和业务接口调用
+    "httpx>=0.27,<1",
+
+    # YAML 配置
+    "pyyaml>=6,<7",
+]
+
+
+# ============================================================
+# 可自选功能依赖
+# 根据实际 Demo 按需安装 注意更新 本文件和uv.lock
+# ============================================================
