@@ -1,0 +1,52 @@
+day1
+制造业与工程场景 Prompt 实战【结合 Demo / 代码演示】
+业务场景 1：需求与文档结构化抽取（Demo：非结构化 PDF/文本格式化提取 JSON）。
+业务场景 2：日志与异常日志分析（Demo：输入日志诊断报错根因）。
+业务场景 3：SQL 与脚本辅助编写（Demo：通过自然语言提问生成复杂 SQL）。
+
+
+day2
+自动化工作流搭建实战【结合 Demo / 工具演示】
+搭建实战 1：多源数据自动提炼与报告生成工作流【Demo 演示】
+Demo 展示：输入多个部门的 Word/Excel/邮件文本，通过工作流自动校验格式、提取关键 KPI 并输出结构化 PDF/Markdown 周报。
+搭建实战 2：生产异常邮件自动分类与路由工作流【Demo 演示】
+Demo 展示：监听告警邮件，通过 LLM 路由节点诊断类型，并分发到对应工程组。
+
+
+day3
+主流 Agent 开发框架对比与剖析【结合代码结构讲解】
+1 LangChain / LangGraph：生态最丰富，LangGraph 擅长有向无环图与复杂状态机。
+2 Semantic Kernel (Microsoft)：面向企业级（.NET/Python/Java）架构，原生支持微软技术栈与企业安全。
+3 AutoGen / CrewAI：多智能体（Multi-Agent）协作与角色扮演框架。
+
+多步骤任务 Agent 手把手代码实战【结合 Demo 代码】
+实战：自动排查与诊断 Agent【Demo 代码】
+实现要点：使用 Python + LangChain / Semantic Kernel 编写 Agent。
+核心逻辑：Agent 接收“某设备参数异常”任务—>规划步骤 —> 逐步调用历史数据库 —> 对比标准参数 —> 生成排查建议与诊断总结。
+
+
+day4
+Function Calling 与工具调用机制【结合 API 代码演示】
+1 Function Calling 核心原理：LLM 如何输出 JSON 格式的函数参数，以及客户端代码如何安全执行函数并回传结果。
+2 Tool Schema 定义规范：以 OpenAPI/JSON Schema 规范准确定义 API 描述与入参格式，提升模型调用的准确率。
+
+工具调用与 RAG 实战【结合 Demo 代码】
+实战 1：Function Calling 对接数据库/API【Demo 代码】
+Demo 展示：编写 Python 代码，定义一个获取 MES 设备实时状态的函数，让 LLM 自动识别并调用该函数返回结果。
+实战 2：极简企业设备维修手册 RAG 知识库搭建【Demo 代码】
+Demo 展示：使用 Chroma/FAISS 向量库与 LangChain，加载本地《设备保养手册 PDF》，构建一个精准带引用出处的问答 Demo
+
+
+day5
+AI 辅助开发（Coding Assistant）实战【结合工具/代码演示】
+1 需求转代码与架构生成：结合 Copilot / Cursor / Claude 编写高质量业务逻辑代码。
+2 代码审查与 Bug 诊断：自动扫描潜在内存泄漏、SQL 注入及逻辑漏洞。
+3 自动化测试生成：基于业务代码一键生成 Unit Test（单元测试）与 API 测试用例。
+
+
+分组综合项目实战【学员基于 Demo 模板动手实操】
+学员分组从以下 4 个典型场景中选择 1-2 个方向，在讲师引导下进行实操修改与验证，具备 PoC 落地能力：
+场景 1【知识库问答 Agent】：集成设备手册与 SOP，实现多轮提问、自动纠错并生成排错步骤的 Agent。
+场景 2【生产异常分析 Agent】：当接收到生产线报错日志时，Agent 自动调取历史案例库与 MES 状态数据，输出根因分析报告。
+场景 3【MES 集成 Agent】：学员通过自然语言输入“帮我查询昨夜A产线不良率并生成工单”，Agent 完成 SQL 查询 + 调 API 动作。
+场景 4【自动报告生成工作流】：基于工作流搭建跨系统（数据库+文档）的数据提炼与 Markdown 自动化报告输出。
