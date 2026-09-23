@@ -1,5 +1,5 @@
 
-from .TaskState import BaseTaskState
+from .taskstate import BaseTaskState
 
 __all__ = [
     "BaseTaskState",

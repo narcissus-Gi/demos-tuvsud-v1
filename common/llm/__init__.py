@@ -1,5 +1,3 @@
-"""Shared LLM creation and test utilities."""
-
 from .base import (
     ChatModel,
     ModelCreationError,
